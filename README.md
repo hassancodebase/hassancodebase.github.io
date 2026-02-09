@@ -6,7 +6,7 @@ Welcome — this repository contains my personal portfolio website. It's a clean
 
 ## Demo
 
-- Live preview: open `index.html` in your browser to view the site locally. or visit: 
+- Live preview: open `index.html` in your browser to view the site locally. or visit: https://hassancodebase.github.io
 
 ---
 
