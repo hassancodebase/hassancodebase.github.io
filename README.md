@@ -31,7 +31,7 @@ This portfolio highlights selected projects and demonstrates front-end design an
 1. Clone the repo (if not already):
    
    ```bash
-   git clone https://github.com/hassancodebase/
+   git clone git clone https://github.com/hassancodebase/hassancodebase.github.io.git
    ```
 
 2. Open the project folder and launch the site by opening `index.html` in any browser.
