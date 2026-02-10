@@ -1,62 +1,120 @@
-# Portfolio
+# Muhammad Hassan — Personal Portfolio
 
-Welcome — this repository contains my personal portfolio website. It's a clean, responsive single-page site showcasing projects, skills, and contact details.
-
----
-
-## Demo
-
-- Live preview: open `index.html` in your browser to view the site locally. or visit: 
+> A clean, fast, fully responsive single-page portfolio showcasing projects, skills, and a working contact form — built with pure HTML, CSS, and JavaScript. No frameworks, no build step.
 
 ---
 
-## About This Portfolio
+## 🔗 Live Site
 
-This portfolio highlights selected projects and demonstrates front-end design and development skills, including responsive layouts, performance-focused assets, and accessibility considerations.
+**[hassancodebase.github.io](https://hassancodebase.github.io)**
 
-## Features
+---
 
-- Minimal, modern design
-- Responsive across devices (mobile → desktop)
-- Project gallery with descriptions and links
-- Contact section with email and social links
+## 📸 Preview
 
-## Technologies
+| Desktop | Mobile |
+|--------|--------|
+| Full-width hero with animated gradient blob | Hamburger nav with stacked layout |
 
-- HTML5, CSS3, and modern JavaScript
-- No build step required — simple, static site
+---
 
-## Run Locally
+## ✨ Features
 
-1. Clone the repo (if not already):
-   
+- **Animated hero section** with gradient blob and scroll indicator
+- **Skills grid** with animated progress bars triggered on scroll
+- **Project gallery** with tags, GitHub links, and live demo links
+- **Education timeline** with certifications panel
+- **Working contact form** powered by EmailJS — no backend needed
+- **Scroll-based reveal animations** on all sections
+- **Responsive design** — tested across mobile, tablet, and desktop
+- **Smooth scroll navigation** with active link tracking
+- **Dark theme** with custom CSS variables for easy theming
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Technology |
+|----------|------------|
+| Markup | HTML5 |
+| Styling | CSS3 (custom properties, Grid, Flexbox, keyframe animations) |
+| Scripting | Vanilla JavaScript (ES6+) |
+| Fonts | Google Fonts — Syne + Inter |
+| Email | EmailJS (contact form, no backend) |
+| Hosting | GitHub Pages |
+
+> **No build tools, bundlers, or frameworks required.** Open `index.html` and it works.
+
+---
+
+## 📁 Project Structure
+
+> Currently the site ships as a single `index.html` file.
+
+---
+
+## 🚀 Getting Started
+
+### View Locally
+
+1. Clone the repository:
+
    ```bash
-   git clone https://github.com/hassancodebase/
+   git clone https://github.com/hassancodebase/hassancodebase.github.io.git
+   cd hassancodebase.github.io
    ```
 
-2. Open the project folder and launch the site by opening `index.html` in any browser.
+2. Open `index.html` in any browser — no server or install needed.
+
+### Contact Form Setup (EmailJS)
+
+The contact form uses [EmailJS](https://www.emailjs.com) to send emails without a backend. To configure it for your own account:
+
+1. Create a free account at [emailjs.com](https://www.emailjs.com)
+2. Create a **Service** (e.g. Gmail) and note the **Service ID**
+3. Create an **Email Template** and note the **Template ID**
+4. Copy your **Public Key** from the EmailJS dashboard
+5. In `index.html`, update these three values:
+
+   ```javascript
+   emailjs.init("YOUR_PUBLIC_KEY");          // line ~387
+   emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+   ```
 
 ---
 
-## How to Update
+**Theme colors (CSS variables):**
 
-- Edit `index.html` to change content or layout.
-- Add images to an `assets/` folder and reference them from the page.
-- If you add more pages, update navigation links accordingly.
-
----
-
-## Deployment Ideas
-
-- GitHub Pages: push to `main` branch and enable Pages in repo settings.
-- Netlify: connect the repo and deploy with zero-config.
+```css
+:root {
+  --clr-bg:       #0a0a0f;   /* page background */
+  --clr-accent:   #00e5ff;   /* cyan highlight   */
+  --clr-accent2:  #7c4dff;   /* purple highlight */
+  --clr-text:     #e2e2ea;   /* body text        */
+}
+```
 
 ---
 
-## Contact
+## 🌐 Deployment
 
-If you'd like to get in touch, email me at: theawanite001@gmail.com
+### GitHub Pages (current)
+Push to the `main` branch. GitHub Pages serves the site automatically from the repo root since the repo is named `hassancodebase.github.io`.
 
-Or find me on:
+---
 
-- LinkedIn: https://www.linkedin.com/in/
+## 📬 Contact
+
+**Muhammad Hassan**
+- 📧 Email: [theawanite001@gmail.com](mailto:theawanite001@gmail.com)
+- 🐙 GitHub: [github.com/hassancodebase](https://github.com/hassancodebase)
+
+---
+
+## 📄 License
+
+This project is open for reference and inspiration. If you use this as a base for your own portfolio, a credit or a ⭐ on the repo is appreciated!
+
+---
+
+<p align="center">Built with ❤️ by Muhammad Hassan </p>
