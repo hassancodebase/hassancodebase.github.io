@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="icon" href="/favicon.ico" sizes="any">
 <title>Muhammad Hassan | Software Engineer Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -724,9 +725,10 @@ footer a { color:var(--clr-accent); text-decoration:none; }
       </div>
       <div class="about-text">
         <h3>Hello, World! 👋</h3>
-        <p>I'm <span class="highlight">Muhammad Hassan</span>, a passionate Software Engineering student currently pursuing my <span class="highlight">BS degree at NUTECH, Islamabad</span> in my 4th semester. I'm deeply fascinated by building software solutions that solve real-world problems.</p>
+        <p>I’m <span class="highlight">Muhammad Hassan</span>, a 4th-semester Software Engineering student at <span class="highlight">National University of Technology (NUTECH), Islamabad</span>. I'm passionate about building software solutions that solve real-world problems. Based in Rawalpindi, Pakistan, I enjoy turning ideas into functional applications and continuously improving my skills in programming, AI/ML, and database systems. I thrive on learning new technologies, developing projects from concept to implementation, and refining my craft to create clean, efficient, and impactful software.</p>
+        <!-- <p>I'm <span class="highlight">Muhammad Hassan</span>, a passionate Software Engineering student currently pursuing my <span class="highlight">BS degree at NUTECH, Islamabad</span> in my 4th semester. I'm deeply fascinated by building software solutions that solve real-world problems.</p>
         <p>Based in <span class="highlight">Rawalpindi, Pakistan</span>, I love turning ideas into clean, functional applications. From desktop tools to web platforms, I enjoy every stage of the development lifecycle — from designing clean architectures to writing elegant code.</p>
-        <p>When I'm not coding, I'm exploring new technologies, working on personal projects, or sharpening my skills in AI/ML and database systems.</p>
+        <p>When I'm not coding, I'm exploring new technologies, working on personal projects, or sharpening my skills in AI/ML and database systems.</p> -->
         <div class="info-chips">
           <span class="info-chip">
             <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -765,8 +767,8 @@ footer a { color:var(--clr-accent); text-decoration:none; }
   <div class="container">
     <div class="reveal">
       <p class="section-label">// Work</p>
-      <h2 class="section-title">My <span class="accent">Projects</span></h2>
-      <p class="section-sub">A selection of things I've built.</p>
+      <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+      <p class="section-sub">A selection of my key academic and personal projects demonstrating problem-solving, software development, computer networking and machine learning skills.</p>
     </div>
     <div class="projects-grid" id="projectsGrid">
       <!-- injected by JS -->
@@ -909,29 +911,26 @@ footer a { color:var(--clr-accent); text-decoration:none; }
 <script>
 // ─── DATA ────────────────────────────────────────────────
 const skills = [
-  { name:"C++",                pct:70,  icon:"⚙️",  bg:"rgba(0,229,255,.1)" },
-  { name:"Java",               pct:75,  icon:"☕",  bg:"rgba(237,139,0,.1)" },
-  { name:"Python",             pct:60,  icon:"🐍",  bg:"rgba(55,118,171,.1)" },
-  { name:"JavaScript",         pct:75,  icon:"⚡",  bg:"rgba(247,223,31,.1)" },
-  { name:"HTML / CSS",         pct:80,  icon:"🌐",  bg:"rgba(227,76,38,.1)"  },
-  { name:"Figma",              pct:65,  icon:"🎨",  bg:"rgba(162,89,255,.1)" },
-  { name:"OOP",                pct:75,  icon:"📦",  bg:"rgba(0,229,255,.1)"  },
-  { name:"Responsive Web Design", pct:80, icon:"📱", bg:"rgba(0,200,150,.1)" },
-  { name:"AI / ML",            pct:60,  icon:"🤖",  bg:"rgba(124,77,255,.1)" },
-  { name:"Database (MySQL / MongoDB)", pct:70, icon:"🗄️", bg:"rgba(255,165,0,.1)" },
-  { name:"Computer Networking",pct:70,  icon:"🔌",  bg:"rgba(200,50,50,.1)"  },
-  { name:"Git / GitHub",       pct:70,  icon:"🔀",  bg:"rgba(40,167,69,.1)"  },
-  { name:"LaTeX Documentation",pct:75,  icon:"📝",  bg:"rgba(100,100,200,.1)"},
-  { name:"Microsoft Office",   pct:80,  icon:"📄",  bg:"rgba(0,112,192,.1)"  },
+  { name:"C++ (Programming Fundamentals, Data Structures & Basic Algorithms)",            icon:"⚙️",  bg:"rgba(0,229,255,.1)" },
+  { name:"Python (Fundamentals, Basic Scripting, Logic Building)",                        icon:"🐍",  bg:"rgba(55,118,171,.1)" },
+  { name:"Web Design and Development (Using Flask API, Nodes.js)",                        icon:"🌐",  bg:"rgba(227,76,38,.1)"  },
+  { name:"Basic Database Management (Using MySQL / MongoDB)",                             icon:"🗄️",  bg:"rgba(255,165,0,.1)" },
+  { name:"ML Fundamentals (Basic Algorithms / Data Preprocessing /Model Evaluation)",     icon:"🤖",  bg:"rgba(124,77,255,.1)" },
+  { name:"Computer Networking Fundamentals & Internet Protocols",                         icon:"🔌",  bg:"rgba(200,50,50,.1)"  },
+  { name:"Basic Command Line Usage (Windows / Linux)",                                    icon:"💻",  bg:"rgba(0,112,192,.1)"  },
+  { name:"Git & GitHub (For Version Control / Tracking)",                                 icon:"🔀",  bg:"rgba(40,167,69,.1)"  },
+  { name:"Basic Understanding of Iterative & Incremental Software Development",           icon:"📦",  bg:"rgba(0,229,255,.1)"  },
+  { name:"Problem Solving & Algorithmic Thinking",                                        icon:"⚡",  bg:"rgba(247,223,31,.1)" },
+  { name:"Requirements & Documentation (Basic Knowledge of LaTeX & README)",              icon:"📝",  bg:"rgba(100,100,200,.1)"},
 ];
 
 const projects = [
-  {
-    title:"HassanCodeBase",
-    desc:"A responsive portfolio website built with HTML, CSS, and JavaScript to showcase my projects, skills, and contact information with a modern design and smooth animations.",
-    tags:["HTML","CSS","JavaScript (ES6)"],
-    github:"https://github.com/hassancodebase/hassancodebase.github.io", live:"https://hassancodebase.github.io/"
-  },
+  // {
+  //   title:"HassanCodeBase",
+  //   desc:"A responsive portfolio website built with HTML, CSS, and JavaScript to showcase my projects, skills, and contact information with a modern design and smooth animations.",
+  //   tags:["HTML","CSS","JavaScript (ES6)"],
+  //   github:"https://github.com/hassancodebase/hassancodebase.github.io", live:"https://hassancodebase.github.io/"
+  // },
   {
     title:"HealthPredict",
     desc:"An AI-powered system that predicts potential diseases based on user-input symptoms using machine learning classification models.",
@@ -956,30 +955,30 @@ const projects = [
     tags:["C++","Data Structres","Console UI"],
     github:"https://github.com/hassancodebase/Multi-Level-Parking-Lot-Management", live:null
   },
-  {
-    title:"Hospital Management System",
-    desc:"A comprehensive system for managing hospital operations — patient records, doctor assignments, appointments, and department tracking.",
-    tags:["Java","OOP","MySQL","Database"],
-    github:"#", live:"#"
-  },
+  // {
+  //   title:"Hospital Management System",
+  //   desc:"A comprehensive system for managing hospital operations — patient records, doctor assignments, appointments, and department tracking.",
+  //   tags:["Java","OOP","MySQL","Database"],
+  //   github:"#", live:"#"
+  // },
   {
     title:"CO2EmissionCalculator",
     desc:"An interactive tool that estimates a user's carbon footprint based on daily activities, travel, and energy consumption with visual analytics.",
     tags:["HTML-CSS","Node.js", "Express.js", "MySQL"],
     github:"https://github.com/hassancodebase/CO2EmissionCalculator", live:"#"
-  },
-  {
-    title:"Banking Management System",
-    desc:"A full-featured banking simulation supporting account creation, deposits, withdrawals, transfers, and transaction history logging.",
-    tags:["HTML","CSS","JavaScript","Node.js"],
-    github:"#", live:"#"
-  },
-  {
-    title:"Task-Manager Web App",
-    desc:"A productivity web application allowing users to create, organize, and track tasks with deadlines, priorities, and status updates.",
-    tags:["HTML","CSS","JavaScript (ES6)"],
-    github:"https://github.com/hassancodebase/Task-Manager", live:"https://hassancodebase.github.io/Task-Manager/"
   }
+  // {
+  //   title:"Banking Management System",
+  //   desc:"A full-featured banking simulation supporting account creation, deposits, withdrawals, transfers, and transaction history logging.",
+  //   tags:["HTML","CSS","JavaScript","Node.js"],
+  //   github:"#", live:"#"
+  // },
+  // {
+  //   title:"Task-Manager Web App",
+  //   desc:"A productivity web application allowing users to create, organize, and track tasks with deadlines, priorities, and status updates.",
+  //   tags:["HTML","CSS","JavaScript (ES6)"],
+  //   github:"https://github.com/hassancodebase/Task-Manager", live:"https://hassancodebase.github.io/Task-Manager/"
+  // }
 ];
 
 // ─── RENDER SKILLS ──────────────────────────────────────
@@ -990,9 +989,7 @@ skills.forEach(s => {
       <div class="skill-card-header">
         <div class="skill-icon" style="background:${s.bg}">${s.icon}</div>
         <h4>${s.name}</h4>
-        <span class="pct">${s.pct}%</span>
       </div>
-      <div class="skill-bar-bg"><div class="skill-bar" data-width="${s.pct}"></div></div>
     </div>`;
 });
 
