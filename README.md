@@ -2,21 +2,16 @@
 
 > A clean, fast, fully responsive single-page portfolio showcasing projects, skills, and a working contact form — built with pure HTML, CSS, and JavaScript. No frameworks, no build step.
 
----
-
 ## 🔗 Live Site
 
 **[hassancodebase.github.io](https://hassancodebase.github.io)**
 
----
 
 ## 📸 Preview
 
 | Desktop | Mobile |
 |--------|--------|
 | Full-width hero with animated gradient blob | Hamburger nav with stacked layout |
-
----
 
 ## ✨ Features
 
@@ -29,8 +24,6 @@
 - **Responsive design** — tested across mobile, tablet, and desktop
 - **Smooth scroll navigation** with active link tracking
 - **Dark theme** with custom CSS variables for easy theming
-
----
 
 ## 🛠️ Tech Stack
 
@@ -45,25 +38,15 @@
 
 > **No build tools, bundlers, or frameworks required.** Open `index.html` and it works.
 
----
-
 ## 📁 Project Structure
 
 > Currently the site ships as a single `index.html` file.
-
----
 
 ## 🚀 Getting Started
 
 ### View Locally
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/hassancodebase/hassancodebase.github.io.git
-   cd hassancodebase.github.io
-   ```
-
+1. Clone the repo
 2. Open `index.html` in any browser — no server or install needed.
 
 ### Contact Form Setup (EmailJS)
@@ -81,8 +64,6 @@ The contact form uses [EmailJS](https://www.emailjs.com) to send emails without 
    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
    ```
 
----
-
 **Theme colors (CSS variables):**
 
 ```css
@@ -94,26 +75,16 @@ The contact form uses [EmailJS](https://www.emailjs.com) to send emails without 
 }
 ```
 
----
-
 ## 🌐 Deployment
 
 ### GitHub Pages (current)
 Push to the `main` branch. GitHub Pages serves the site automatically from the repo root since the repo is named `hassancodebase.github.io`.
-
----
 
 ## 📬 Contact
 
 **Muhammad Hassan**
 - 📧 Email: [theawanite001@gmail.com](mailto:theawanite001@gmail.com)
 - 🐙 GitHub: [github.com/hassancodebase](https://github.com/hassancodebase)
-
----
-
-## 📄 License
-
-This project is open for reference and inspiration. If you use this as a base for your own portfolio, a credit or a ⭐ on the repo is appreciated!
 
 ---
 
